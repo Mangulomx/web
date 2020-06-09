@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("#content").load("pages/contact.html");
     });
 
-    $("ul li a#start").click(function() {
+    $("ul li a#start").on('load', function() {
         $.ajax({
             url : "pages/conoceGranada.txt",
             dataType: "text",
