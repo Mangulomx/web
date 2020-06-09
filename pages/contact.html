@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contactanos</title>
+	<style type="text/css">
+
+		fieldset
+		{
+			padding:20px 30px;
+			margin:30px 30px;
+		}
+		input, label
+		{
+			margin-top: 10px;
+			display: inline-block;
+			width: 130px;
+		}
+	</style>
+</head>
+<body>
+			<!-- Formulario de contacto -->
+			<form action="mailto:mangulomx@gmail.com" method="post" enctype="text/plain">
+				<fieldset legend="Datos personales">
+					<legend>Contacta con nosotros</legend>
+					<label for="nombre">Nombre:</label>
+					<input type="text" name="name" id="name" placeholder="Introduce tu nombre" required>
+					<br/>
+					<label for="email">Email:</label>
+					<input type="email" name="correoe" id="correoe" placeholder="Introduce tu correo electrónico" required>
+					<br/>
+					<label for="telefono">Teléfono</label>
+					<input type="tel" name="telefono" id="telefono" placeholder="Introduce telefono con 9 digitos" pattern="[0-9]{9}">
+					<br/>
+					<label for="edad">Edad</label>
+					<input type="number" name="edad" id="edad" min=1 max=99 step=1 placeholder="Introduce tu edad">
+					<br/>
+					<label for="comentarios">Comentarios</label>
+					<textarea rows="5" cols="40" name="comentarios" id="comentarios" placeholder="Introduce tu comentarios.."></textarea>
+					<input type="submit" value="Enviar">
+					<input type="reset" value="Limpiar">
+
+				</fieldset>
+			</form>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE <html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Gestor de tareas</title>
+	</head>
+	<body>
+		<h1>Gestor de tareas</h1>
+		<section>
+			<table>
+				<thead>
+					<th id="t_id"></th>
+					<th id="t_name"></th>
+					<th id="t_todo"></th>
+					<th id="t_prog"></th>
+					<th id="t_done"></th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td class="name">Lavar la ropa</td>
+						<td class="ico"> X</td>
+						<td class="ico" ></td>
+						<td class="ico"></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td class="name">Ir al veterinario</td>
+						<td class="ico"> X</td>
+						<td class="ico"></td>
+						<td class="ico"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td class="name">Escribir correo importante</td>
+						<td class="ico"> X</td>
+						<td class="ico"></td>
+						<td class="ico"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<form>
+			<h2>Información de la tarea</h2>
+			<div id="name">
+				<label for="task_name">Tarea</label>
+				<input type="text" id="task_name" name="task_name">
+				
+			</div>
+			<div id="state">
+				<label for="task_name">Estado</label>
+				<input type="checkbox" id="task_todo" name="task_name" value="todo">
+				<label for="task_todo">Pendiente</label>
+
+				<input type="checkbox" id="task_progress" name="task_name" value="progress">
+				<label for="task_progress">En progreso</label>
+
+				<input type="checkbox" id="task_done" name="task_name" value="done">
+				<label for="task_done">Hecha</label>
+			</div>
+			<div id="detail">
+				<label for="task_detail">Detalle</label>
+				<textarea name="task_detail" id="task_detail"></textarea>
+			</div>
+			<div class="button">
+				<button type="submit">Guardar cambios >></button>
+
+			</div>
+		</form>
+	</body>
+</html>
